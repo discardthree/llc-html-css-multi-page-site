@@ -1,11 +1,19 @@
-body {
-  color: #2F240F;
-  font-family: 'gentium book basic', serif;
-  padding: 0;
-  margin: 0;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-h1 {
+/* HEADER
+-----------------------------------------*/
+header,
+section {
+    padding: 20px 30px;
+}
+
+header h1 {
   /* For all of h1 except the accent words which will follow 'span' */
   color: #96722E;
   font-family: "open sans";
@@ -15,7 +23,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h1 span {
+header h1 span {
   color: #2F240F;
   font-family: "gentium book basic";
   text-transform: none;
@@ -23,8 +31,13 @@ h1 span {
   /* For the Patricia in Patricia Gillett-Kawamoto */
 }
 
-h2 {
+header h2 {
   font-family: "gentium book basic";
+}
+
+h1, h2 {
+    margin: 0; /* removes default space */
+    line-height: 1; /* tightens up the space between the headings */
 }
 
 h4 {
@@ -33,11 +46,53 @@ h4 {
 }
 
 
+/* For the nav menu
+-----------------------------------------*/
+
+nav ul {
+    list-style-type: none; /* removes bullets */
+    margin: 0; /* removes default margin */
+    padding: 0; /* removes default padding */
+}
+
+nav ul li {
+    display: inline-block; /* gets the list items to line up side by side */
+}
+
+nav a {
+    display: block; /* changes the element to block */
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+
+/*
+-----------------------------------------*/
+body {
+  color: #2F240F;
+  font-family: 'gentium book basic', serif;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
 a {
  color: #96722E;
 }
 
+blockquote {
+  border: 15px solid #96722E;
+  margin-left: 50px;
+  width: 500px;
+  padding: 15px;
+}
+
+blockquote h2 {
+  font-family: "dancing script";
+  padding-bottom: 10px;
+}
+
 cite {
   font-family: "dancing script";
-  margin: 270px;
+  margin-left: 270px;
 }

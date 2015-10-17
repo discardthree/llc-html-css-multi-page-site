@@ -14,7 +14,7 @@ html, body {
 /* HOMEPAGE
 -----------------------------------------*/
 .home {
-    background: url(../images/background-6.jpg) no-repeat 50%;
+    background: url(../images/background-2.jpg) no-repeat 50%;
     background-size: cover;
 }
 
@@ -24,19 +24,32 @@ html, body {
     border-bottom: none;
     text-align: center;
     padding-top: 100px;
+    color: #FFFFFF;
 }
 
 .home header h1 {
   font-size: 100px;
+  color: #FFFFFF;
 }
+
 .home header h2 {
+  color: #FFFFFF;
   font-size: 40px;
 }
+
+.home header h4 {
+  color: #FFFFFF;
+}
+
 .home section {
   padding-top: 0px;
 }
 
 .home a {
+  color: #FFFFFF;
+}
+
+.home footer {
   color: #FFFFFF;
 }
 
@@ -70,6 +83,14 @@ header h1 {
 
 .lowlight {
   color: #2F240F;
+  font-family: "gentium book basic";
+  text-transform: none;
+  font-style: italic;
+  /* For the Patricia in Patricia Gillett-Kawamoto */
+}
+
+.lowlight-white {
+  color: #FFFFFF;
   font-family: "gentium book basic";
   text-transform: none;
   font-style: italic;

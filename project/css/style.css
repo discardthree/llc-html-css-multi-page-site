@@ -1,16 +1,56 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    text-align: center;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+html, body {
+    height: 100%;
+}
+
+/* HOMEPAGE
+-----------------------------------------*/
+.home header {
+    position: static;
+    background: transparent;
+    border-bottom: none;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.home header h1 {
+  font-size: 100px;
+}
+.home header h2 {
+  font-size: 40px;
+}
+.home section {
+  padding-top: 0px;
+}
+
+.home {
+    background: url(../images/background-6.jpg) no-repeat 50%;
+    background-size: cover;
+}
 /* HEADER
 -----------------------------------------*/
 header,
+section, body {
+  padding: 20px 30px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
 section {
-    padding: 20px 30px;
+  padding-top: 175px;
 }
 
 header h1 {
@@ -19,11 +59,11 @@ header h1 {
   font-family: "open sans";
   font-weight: 700;
   font-size: 48px;
-  margin: 0px 0px 32px;
+  margin: 0px 0px 16px;
   text-transform: uppercase;
 }
 
-header h1 span {
+.lowlight {
   color: #2F240F;
   font-family: "gentium book basic";
   text-transform: none;
@@ -31,8 +71,9 @@ header h1 span {
   /* For the Patricia in Patricia Gillett-Kawamoto */
 }
 
-header h2 {
+h2 {
   font-family: "gentium book basic";
+  font-style: italic;
 }
 
 h1, h2 {
@@ -73,26 +114,61 @@ body {
   font-family: 'gentium book basic', serif;
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 
 a {
  color: #96722E;
 }
 
+
+/* Boxed content (ex. recipe)
+-----------------------------------------*/
+
 blockquote {
+  text-align: center;
+  clear:both;
   border: 15px solid #96722E;
-  margin-left: 50px;
-  width: 500px;
-  padding: 15px;
+  position: relative;
+  margin-left: 25%;
+  width: 50%;
 }
 
 blockquote h2 {
   font-family: "dancing script";
   padding-bottom: 10px;
+  font-style: normal;
 }
 
 cite {
   font-family: "dancing script";
   margin-left: 270px;
+  font-size: 20px;
+}
+
+.recipe {
+  text-align: left;
+  padding: 15pt;
+  width: 100%;
+}
+
+.split-box {
+  text-align: left;
+  padding: 15pt;
+  width: 100%;
+  margin-left: 15px;
+}
+
+/* ABOUT PAGE
+-----------------------------------------*/
+.about-text {
+  float: right;
+  width: 55%;
+}
+
+.profile-img {
+    float: left;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
